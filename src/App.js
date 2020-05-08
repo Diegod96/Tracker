@@ -3,6 +3,14 @@ import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import coronaImage from './images/image.png';
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+
+
+
+
 
 class App extends React.Component {
     state = {
@@ -22,18 +30,27 @@ class App extends React.Component {
         this.setState({ data, country: country });
     }
 
+
+
     render() {
         const { data, country } = this.state;
 
         return (
+
             <div className={styles.container}>
-                <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">
-                    <img className={styles.image} src={coronaImage} alt="COVID-19" />
-                </a>
+                <AppBar position="static">
+                    <Toolbar>
+                        <Typography variant="h6" className={styles.title}>
+                            Welcome To The Covid-19 Global Dashboard
+                        </Typography>
+                        <Button color="inherit" href="https://covid-flask.herokuapp.com/">Covid-19 Probability Detector</Button>
+                    </Toolbar>
+                </AppBar>
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Chart data={data} country={country} />
             </div>
+
         )
     }
 }
