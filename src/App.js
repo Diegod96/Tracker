@@ -43,6 +43,7 @@ class App extends React.Component {
                         <Typography variant="h6" className={styles.title}>
                             Welcome To The Covid-19 Global Dashboard
                         </Typography>
+                        <Button color="inherit" href="https://hardcore-ramanujan-a1457f.netlify.app/">Covid-19 US Dashboard</Button>
                         <Button color="inherit" href="https://covid-flask.herokuapp.com/">Covid-19 Probability Detector</Button>
                         <Button color="inherit" href="https://eloquent-jones-2d79ac.netlify.app/">Handwashing Application</Button>
                     </Toolbar>
