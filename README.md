@@ -6,3 +6,4 @@ To run type ```npm start``` in the terminal
 
 TODO:
  - Unit test cases
+ - Github actions
