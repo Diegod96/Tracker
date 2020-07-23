@@ -1,4 +1,4 @@
-# A Covid-19 Dashboard for the United States
+# A Covid-19 Dashboard for Globe
 
 <img width="949" alt="covid" src="https://user-images.githubusercontent.com/25403763/88329127-7b8c4480-ccf7-11ea-87e1-73058c52dbd2.PNG">
 
